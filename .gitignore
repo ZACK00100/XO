@@ -1,52 +1,603 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main(int argc, char *argv[])
+{
+  int code;
+  char choix1, choix;
+  char a, b, c, d, e, f, h, g, i, k, j, y, z, p, q, s, r, t, u, v, w, x, m, n, o, l, aa, bb, cc, dd, ee, ff, gg, hh, ii, jj;
+  char nom1[10], nom[10];
 
-# Linker output
-*.ilk
-*.map
-*.exp
+  a = '0', b = '1', c = '2', d = '3', e = '4', f = '5', g = '6', i = '8', h = '7', j = '9', k = 'a', l = 'b', m = 'c', n = 'd', o = 'e', p = 'f', q = 'g', r = 'h', s = 'i', t = 'j', u = 'k', v = 'l', w = 'm', x = 'n', y = '*', z = 'p', aa = 'q', bb = 'r', cc = 's', dd = 't', ee = 'u', ff = 'v', gg = 'w', hh = '+', ii = 'y', jj = 'z';
+  printf("Donner le Nom du 1er joureur (X) :");
+  scanf("%s", &nom);
+  printf("Donner le Nom du 2er joureur (O) :");
+  scanf("%s", &nom1);
+  printf("\n");
 
-# Precompiled Headers
-*.gch
-*.pch
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", a, b, c, d, e, f);
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", g, h, i, j, k, l);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", m, n, o, p, q, r);
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", s, t, u, v, w, x);
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", y, z, aa, bb, cc, dd);
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+  printf("\t\t_________________________\n");
+  printf("\t\t| %c | %c | %c | %c | %c | %c |\n", ee, ff, gg, hh, ii, jj);
+
+  while (a == '0' || b == '1' || c == '2' || d == '3' || e == '4' || f == '5' || g == '6' || i == '8' || h == '7' || j == '9' || k == 'a' || l == 'b' || m == 'c' || n == 'd' || o == 'e' || p == 'f' || q == 'g' || r == 'h' || s == 'i' || t == 'j' || u == 'k' || v == 'l' || w == 'm' || x == 'n' || y == '*' || z == 'p' || aa == 'q' || bb == 'r' || cc == 's' || dd == 't' || ee == 'u' || ff == 'v' || gg == 'w' || hh == '+' || ii == 'y' || jj == 'z')
+  {
+
+    printf("%s donner votre choix(X) :", nom);
+    scanf("%s", &choix);
+    system("cls");
+
+    if (choix == '0' && a != 'X' && a != 'O')
+    {
+      a = 'X';
+    }
+    if (choix == '1' && b != 'X' && b != 'O')
+    {
+      b = 'X';
+    }
+    if (choix == '2' && c != 'X' && c != 'O')
+    {
+      c = 'X';
+    }
+    if (choix == '3' && d != 'X' && d != 'O')
+    {
+      d = 'X';
+    }
+
+    if (choix == '4' && e != 'X' && e != 'O')
+    {
+      e = 'X';
+    }
+    if (choix == '5' && f != 'X' && f != 'O')
+    {
+      f = 'X';
+    }
+    if (choix == '7' && h != 'X' && h != 'O')
+    {
+      h = 'X';
+    }
+    if (choix == '6' && g != 'X' && g != 'O')
+    {
+      g = 'X';
+    }
+    if (choix == '8' && i != 'X' && i != 'O')
+    {
+      i = 'X';
+    }
+    if (choix == '9' && j != 'X' && j != 'O')
+    {
+      j = 'X';
+    }
+    if (choix == 'a' && k != 'X' && k != 'O')
+    {
+      k = 'X';
+    }
+    if (choix == 'b' && l != 'X' && l != 'O')
+    {
+      l = 'X';
+    }
+    if (choix == 'c' && m != 'X' && m != 'O')
+    {
+      m = 'X';
+    }
+    if (choix == 'd' && n != 'X' && n != 'O')
+    {
+      n = 'X';
+    }
+    if (choix == 'e' && o != 'X' && o != 'O')
+    {
+      o = 'X';
+    }
+    if (choix == 'f' && p != 'X' && p != 'O')
+    {
+      p = 'X';
+    }
+    if (choix == 'g' && q != 'X' && q != 'O')
+    {
+      q = 'X';
+    }
+    if (choix == 'h' && r != 'X' && r != 'O')
+    {
+      r = 'X';
+    }
+    if (choix == 'i' && s != 'X' && s != 'O')
+    {
+      s = 'X';
+    }
+    if (choix == 'j' && t != 'X' && t != 'O')
+    {
+      t = 'X';
+    }
+    if (choix == 'k' && u != 'X' && u != 'O')
+    {
+      u = 'X';
+    }
+    if (choix == 'l' && v != 'X' && v != 'O')
+    {
+      v = 'X';
+    }
+    if (choix == 'm' && w != 'X' && w != 'O')
+    {
+      w = 'X';
+    }
+    if (choix == 'n' && x != 'X' && x != 'O')
+    {
+      x = 'X';
+    }
+    if (choix == '*' && y != 'X' && y != 'O')
+    {
+      y = 'X';
+    }
+    if (choix == 'p' && z != 'X' && z != 'O')
+    {
+      z = 'X';
+    }
+    if (choix == 'q' && aa != 'X' && aa != 'O')
+    {
+      aa = 'X';
+    }
+    if (choix == 'r' && bb != 'X' && bb != 'O')
+    {
+      bb = 'X';
+    }
+    if (choix == 's' && cc != 'X' && cc != 'O')
+    {
+      cc = 'X';
+    }
+    if (choix == 't' && dd != 'X' && dd != 'O')
+    {
+      dd = 'X';
+    }
+    if (choix == 'u' && ee != 'X' && ee != 'O')
+    {
+      ee = 'X';
+    }
+    if (choix == 'v' && ff != 'X' && ff != 'O')
+    {
+      ff = 'X';
+    }
+    if (choix == 'w' && gg != 'X' && gg != 'O')
+    {
+      gg = 'X';
+    }
+    if (choix == '+' && hh != 'X' && hh != 'O')
+    {
+      hh = 'X';
+    }
+    if (choix == 'y' && ii != 'X' && ii != 'O')
+    {
+      ii = 'X';
+    }
+    if (choix == 'z' && jj != 'X' && jj != 'O')
+    {
+      jj = 'X';
+    }
+
+    if (a == 'X' && b != 'X' && b != 'O')
+    {
+      b = 'O';
+    }
+    else if (a == 'X' && b == 'X' && g != 'X' && g != 'O')
+    {
+      g = 'O';
+    }
+    else if (a == 'X' && g == 'X' && m != 'X' && m != 'O')
+    {
+      m = 'O';
+    }
+    else if (a == 'X' && h == 'X' && o != 'X' && o != 'O')
+    {
+      o = 'O';
+    }
+
+    else if (b == 'X' && c != 'X' && c != 'O')
+    {
+      c = 'O';
+    }
+    else if (b == 'X' && h != 'X' && h != 'O')
+    {
+      h = 'O';
+    }
+    else if (b == 'X' && h == 'X' && n != 'X' && n != 'O')
+    {
+      n = 'O';
+    }
+    else if (b == 'X' && i == 'X' && p != 'X' && p != 'O')
+    {
+      p = 'O';
+    }
+    else if (i == 'X' && p != 'X' && p != 'O')
+    {
+      p = 'O';
+    }
+    else if (i == 'X' && p == 'X' && w != 'X' && w != 'O')
+    {
+      w = 'O';
+    }
+
+    else if (c == 'X' && d != 'X' && d != 'O')
+    {
+      d = 'O';
+    }
+    else if (c == 'X' && d == 'X' && e != 'X' && e != 'O')
+    {
+      p = 'O';
+    }
+    else if (c == 'X' && j == 'X' && q != 'X' && q != 'O')
+    {
+      q = 'O';
+    }
+    else if (c == 'X' && i != 'X' && i != 'O' && d != '3')
+    {
+      i = 'O';
+    }
+    else if (c == 'X' && i == 'X' && o != 'X' && o != 'O')
+    {
+      o = 'O';
+    }
+
+    else if (d == 'X' && e != 'X' && e != 'O' && c != '2')
+    {
+      e = 'O';
+    }
+    else if (d == 'X' && c != 'X' && c != 'O')
+    {
+      c = 'O';
+    }
+    else if (e == 'X' && e == 'X' && f != 'X' && f != 'O')
+    {
+      f = 'O';
+    }
+    else if (d == 'X' && j == 'X' && p != 'X' && p != 'O')
+    {
+      p = 'O';
+    }
+    else if (d == 'X' && k == 'X' && r != 'X' && r != 'O')
+    {
+      r = 'O';
+    }
+
+    else if (e == 'X' && k != 'X' && k != 'O')
+    {
+      k = 'O';
+    }
+    else if (e == 'X' && k == 'X' && q != 'X' && q != 'O')
+    {
+      q = 'O';
+    }
+    else if (e == 'X' && l != 'X' && l != 'O' && k != 'a' && f != '5')
+    {
+      l = 'O';
+    }
+    else if (k == 'X' && q != 'X' && q != 'O')
+    {
+      q = 'O';
+    }
+    else if (k == 'X' && q == 'X' && w != 'X' && w != 'O')
+    {
+      p = 'O';
+    }
+
+    else if (f == 'X' && e != 'X' && e != 'O')
+    {
+      e = 'O';
+    }
+    else if (f == 'X' && l != 'X' && l != 'O' && e != '4')
+    {
+      e = 'O';
+    }
+    else if (l == 'X' && r != 'X' && r != 'O')
+    {
+      r = 'O';
+    }
+    else if (l == 'X' && r == 'X' && x != 'X' && x != 'O')
+    {
+      x = 'O';
+    }
+    else if (h == 'X' && n == 'd')
+    {
+      n = 'O';
+    }
+    else if (h == 'X' && n != 'd' && i == 'e')
+    {
+      e = 'O';
+    }
+    else if (h == 'X' && n != 'd' && i != 'e' && g == '6')
+    {
+      g = 'O';
+    }
+    else if (h == 'X' && n != 'd' && i != 'e' && g != '6' && b == '1')
+    {
+      b = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i == 'e')
+    {
+      e = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i != 'e' && g == '6')
+    {
+      g = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i != 'e' && g != '6' && b != '1' && o == 'e')
+    {
+      o = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i != 'e' && g != '6' && b != '1' && o != 'e' && m == 'c')
+    {
+      e = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i != 'e' && g != '6' && b != '1' && o != 'e' && m != 'c' && a == '0')
+    {
+      a = 'O';
+    }
+    else if (h = 'X' && n != 'd' && i != 'e' && g != '6' && b != '1' && o != 'e' && m != 'c' && a != '0' && c == '2')
+    {
+      c = 'O';
+    }
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", a, b, c, d, e, f);
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", g, h, i, j, k, l);
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", m, n, o, p, q, r);
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", s, t, u, v, w, x);
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", y, z, aa, bb, cc, dd);
+
+    printf("\t\t_________________________\n");
+    printf("\t\t| %c | %c | %c | %c | %c | %c |\n", ee, ff, gg, hh, ii, jj);
+    if ((a == 'X' && b == 'X' && c == 'X' && d == 'X') || (b == 'X' && c == 'X' && d == 'X' && e == 'X') || (c == 'X' && d == 'X' && e == 'X' && f == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      m;
+    }
+    if ((g == 'X' && h == 'X' && i == 'X' && j == 'X') || (h == 'X' && i == 'X' && j == 'X' && k == 'X') || (i == 'X' && j == 'X' && k == 'X' && l == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((m == 'X' && n == 'X' && o == 'X' && p == 'X') || (n == 'X' && o == 'X' && p == 'X' && q == 'X') || (o == 'X' && p == 'X' && q == 'X' && r == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((s == 'X' && t == 'X' && u == 'X' && v == 'X') || (t == 'X' && u == 'X' && v == 'X' && w == 'X') || (u == 'X' && v == 'X' && w == 'X' && x == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((y == 'X' && z == 'X' && aa == 'X' && bb == 'X') || (z == 'X' && aa == 'X' && bb == 'X' && cc == 'X') || (aa == 'X' && bb == 'X' && cc == 'X' && dd == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((ee == 'X' && ff == 'X' && gg == 'X' && hh == 'X') || (ff == 'X' && gg == 'X' && hh == 'X' && ii == 'X') || (gg == 'X' && hh == 'X' && ii == 'X' && jj == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((a == 'X' && g == 'X' && m == 'X' && s == 'X') || (g == 'X' && m == 'X' && s == 'X' && y == 'X') || (m == 'X' && s == 'X' && y == 'X' && ee == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((b == 'X' && h == 'X' && n == 'X' && t == 'X') || (h == 'X' && n == 'X' && t == 'X' && z == 'X') || (n == 'X' && t == 'X' && z == 'X' && ff == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((c == 'X' && i == 'X' && o == 'X' && u == 'X') || (i == 'X' && o == 'X' && u == 'X' && aa == 'X') || (o == 'X' && u == 'X' && aa == 'X' && gg == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((d == 'X' && j == 'X' && p == 'X' && v == 'X') || (j == 'X' && p == 'X' && v == 'X' && bb == 'X') || (p == 'X' && v == 'X' && bb == 'X' && hh == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((e == 'X' && k == 'X' && q == 'X' && w == 'X') || (k == 'X' && q == 'X' && w == 'X' && cc == 'X') || (q == 'X' && w == 'X' && cc == 'X' && ii == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((f == 'X' && l == 'X' && r == 'X' && x == 'X') || (l == 'X' && r == 'X' && x == 'X' && dd == 'X') || (r == 'X' && x == 'X' && dd == 'X' && jj == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((a == 'X' && h == 'X' && o == 'X' && v == 'X') || (h == 'X' && o == 'X' && v == 'X' && cc == 'X') || (o == 'X' && v == 'X' && cc == 'X' && jj == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((f == 'X' && k == 'X' && p == 'X' && u == 'X') || (k == 'X' && p == 'X' && u == 'X' && z == 'X') || (p == 'X' && u == 'X' && z == 'X' && ee == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((b == 'X' && i == 'X' && p == 'X' && w == 'X') || (i == 'X' && p == 'X' && w == 'X' && dd == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((c == 'X' && j == 'X' && q == 'X' && x == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((g == 'X' && n == 'X' && u == 'X' && bb == 'X') || (n == 'X' && u == 'X' && bb == 'X' && ii == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((m == 'X' && t == 'X' && aa == 'X' && hh == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((e == 'X' && j == 'X' && o == 'X' && t == 'X') || (j == 'X' && o == 'X' && t == 'X' && y == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((d == 'X' && i == 'X' && n == 'X' && s == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((l == 'X' && q == 'X' && v == 'X' && aa == 'X') || (ff == 'X' && q == 'X' && v == 'X' && aa == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((r == 'X' && w == 'X' && bb == 'X' && gg == 'X'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((a == 'O' && b == 'O' && c == 'O' && d == 'O') || (b == 'O' && c == 'O' && d == 'O' && e == 'O') || (c == 'O' && d == 'O' && e == 'O' && f == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((g == 'O' && h == 'O' && i == 'O' && j == 'O') || (h == 'O' && i == 'O' && j == 'O' && k == 'O') || (i == 'O' && j == 'O' && k == 'O' && l == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((m == 'O' && n == 'O' && o == 'O' && p == 'O') || (n == 'O' && o == 'O' && p == 'O' && q == 'O') || (o == 'O' && p == 'O' && q == 'O' && r == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((s == 'O' && t == 'O' && u == 'O' && v == 'O') || (t == 'O' && u == 'O' && v == 'O' && w == 'O') || (u == 'O' && v == 'O' && w == 'O' && x == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((y == 'O' && z == 'O' && aa == 'O' && bb == 'O') || (z == 'O' && aa == 'O' && bb == 'O' && cc == 'O') || (aa == 'O' && bb == 'O' && cc == 'O' && dd == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((ee == 'O' && ff == 'O' && gg == 'O' && hh == 'O') || (ff == 'O' && gg == 'O' && hh == 'O' && ii == 'O') || (gg == 'O' && hh == 'O' && ii == 'O' && jj == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((a == 'O' && g == 'O' && m == 'O' && s == 'O') || (g == 'O' && m == 'O' && s == 'O' && y == 'O') || (m == 'O' && s == 'O' && y == 'O' && ee == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((b == 'O' && h == 'O' && n == 'O' && t == 'O') || (h == 'O' && n == 'O' && t == 'O' && z == 'O') || (n == 'O' && t == 'O' && z == 'O' && ff == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((c == 'O' && i == 'O' && o == 'O' && u == 'O') || (i == 'O' && o == 'O' && u == 'O' && aa == 'O') || (o == 'O' && u == 'O' && aa == 'O' && gg == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((d == 'O' && j == 'O' && p == 'O' && v == 'O') || (j == 'O' && p == 'O' && v == 'O' && bb == 'O') || (p == 'O' && v == 'O' && bb == 'O' && hh == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((e == 'O' && k == 'O' && q == 'O' && w == 'O') || (k == 'O' && q == 'O' && w == 'O' && cc == 'O') || (q == 'O' && w == 'O' && cc == 'O' && ii == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((f == 'O' && l == 'O' && r == 'O' && x == 'O') || (l == 'O' && r == 'O' && x == 'O' && dd == 'O') || (r == 'O' && x == 'O' && dd == 'O' && jj == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((a == 'O' && h == 'O' && o == 'O' && v == 'O') || (h == 'O' && o == 'O' && v == 'O' && cc == 'O') || (o == 'O' && v == 'O' && cc == 'O' && jj == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((f == 'O' && k == 'O' && p == 'O' && u == 'O') || (k == 'O' && p == 'O' && u == 'O' && z == 'O') || (p == 'O' && u == 'O' && z == 'O' && ee == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((b == 'O' && i == 'O' && p == 'O' && w == 'O') || (i == 'O' && p == 'O' && w == 'O' && dd == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((c == 'O' && j == 'O' && q == 'O' && x == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((g == 'O' && n == 'O' && u == 'O' && bb == 'O') || (n == 'O' && u == 'O' && bb == 'O' && ii == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((m == 'O' && t == 'O' && aa == 'O' && hh == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+
+    if ((e == 'O' && j == 'O' && o == 'O' && t == 'O') || (j == 'O' && o == 'O' && t == 'O' && y == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((d == 'O' && i == 'O' && n == 'O' && s == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((l == 'O' && q == 'O' && v == 'O' && aa == 'O') || (ff == 'O' && q == 'O' && v == 'O' && aa == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+    if ((r == 'O' && w == 'O' && bb == 'O' && gg == 'O'))
+    {
+      printf("%s a gagne la partie\n\n", nom);
+      goto m;
+    }
+  }
+  printf("partie null\n");
+
+m:
+{
+  system("PAUSE>null");
+}
+  return 0;
+}
